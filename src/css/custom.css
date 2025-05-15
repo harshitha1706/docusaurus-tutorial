@@ -27,4 +27,24 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+  /* src/css/custom.css */
+
+.admonition-tip {
+  background-color: #e6f4ea; /* Light green */
+  border-left: 4px solid #34a853; /* Google green */
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.admonition-tip .admonition-heading {
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+.admonition-tip .admonition-content {
+  font-size: 0.95rem;
+  color: #333;
+}
+
 }

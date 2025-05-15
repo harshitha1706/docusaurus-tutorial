@@ -13,8 +13,12 @@
   "version": "current",
   "frontMatter": {},
   "sidebar": "tutorialSidebar",
-  "next": {
+  "previous": {
     "title": "Databricks",
     "permalink": "/docs/Databricks"
+  },
+  "next": {
+    "title": "Silver",
+    "permalink": "/docs/Silver"
   }
 }

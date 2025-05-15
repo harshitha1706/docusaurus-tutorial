@@ -12,10 +12,12 @@ Databricks is a cloud-based data analytics and AI platform built on Apache Spark
 
 <figure>
 
-<img src="../static/img/docusaurus.png" alt="Docusaurus" width="800"/>
+<img src="/img/dbgov.png" alt="Docusaurus" width="800"/>
 
 <figcaption>&nbsp;</figcaption>
 </figure>
+
+
 
 
 ## Technologies to Learn for Databricks
@@ -40,6 +42,12 @@ To work with Databricks, you should have knowledge of:
 
 5.	Machine Learning & AI (If working with AI models)
 -	MLflow (Used for managing ML models in Databricks)
+
+
+
+:::tip
+Prerequistes are pyspark, SQL
+:::
 
 ## Real-Time Example:
 Use Case: Fraud Detection in Banking

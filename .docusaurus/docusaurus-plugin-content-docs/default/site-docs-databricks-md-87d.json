@@ -14,11 +14,11 @@
   "frontMatter": {},
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Bronze",
-    "permalink": "/docs/Bronze"
+    "title": "Contents Of Databricks",
+    "permalink": "/docs/intro"
   },
   "next": {
-    "title": "Gold",
-    "permalink": "/docs/Gold"
+    "title": "Bronze",
+    "permalink": "/docs/Bronze"
   }
 }

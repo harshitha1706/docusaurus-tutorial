@@ -14,10 +14,6 @@
   "frontMatter": {},
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Databricks",
-    "permalink": "/docs/Databricks"
-  },
-  "next": {
     "title": "Silver",
     "permalink": "/docs/Silver"
   }
