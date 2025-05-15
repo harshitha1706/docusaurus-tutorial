@@ -1,0 +1,53 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "Bronze",
+          "docs": [
+            {
+              "id": "Bronze",
+              "path": "/docs/Bronze",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Databricks",
+              "path": "/docs/Databricks",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Gold",
+              "path": "/docs/Gold",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "intro",
+              "path": "/docs/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Silver",
+              "path": "/docs/Silver",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/Bronze",
+                "label": "Bronze"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}
