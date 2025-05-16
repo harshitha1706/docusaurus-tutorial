@@ -114,15 +114,15 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '9a5'),
+    component: ComponentCreator('/docs', '5d7'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', 'aa2'),
+        component: ComponentCreator('/docs', 'a2d'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', '963'),
+            component: ComponentCreator('/docs', '6bb'),
             routes: [
               {
                 path: '/docs/Bronze',
@@ -131,10 +131,30 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
+                path: '/docs/data-viz-course-material',
+                component: ComponentCreator('/docs/data-viz-course-material', 'a54'),
+                exact: true
+              },
+              {
                 path: '/docs/Databricks',
                 component: ComponentCreator('/docs/Databricks', '685'),
                 exact: true,
                 sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/databricks-advanced-data-engineering',
+                component: ComponentCreator('/docs/databricks-advanced-data-engineering', '02e'),
+                exact: true
+              },
+              {
+                path: '/docs/databricks-basic-data-engineering',
+                component: ComponentCreator('/docs/databricks-basic-data-engineering', 'ebb'),
+                exact: true
+              },
+              {
+                path: '/docs/dimensional-modeling-slides',
+                component: ComponentCreator('/docs/dimensional-modeling-slides', '375'),
+                exact: true
               },
               {
                 path: '/docs/Gold',
@@ -147,6 +167,17 @@ export default [
                 component: ComponentCreator('/docs/intro', '61d'),
                 exact: true,
                 sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/pyspark-program-samples',
+                component: ComponentCreator('/docs/pyspark-program-samples', '7ff'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/relational-modeling-slides',
+                component: ComponentCreator('/docs/relational-modeling-slides', 'b3e'),
+                exact: true
               },
               {
                 path: '/docs/Silver',

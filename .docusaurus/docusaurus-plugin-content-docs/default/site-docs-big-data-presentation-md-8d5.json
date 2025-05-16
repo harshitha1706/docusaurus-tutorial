@@ -1,0 +1,20 @@
+{
+  "id": "big-data-presentation",
+  "title": "Introduction to Big Data",
+  "description": "HDFS, Hive, and the Spark Ecosystem",
+  "source": "@site/docs/big-data-presentation.md",
+  "sourceDirName": ".",
+  "slug": "/big-data-presentation",
+  "permalink": "/docs/big-data-presentation",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/big-data-presentation.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Relational Data Modeling: An Introduction",
+    "permalink": "/docs/relational-modeling-slides"
+  }
+}

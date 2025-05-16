@@ -25,7 +25,9 @@ const sidebars = {
     'Databricks',
     'Bronze',
     'Silver',
-    'Gold'
+    'Gold',
+    'pyspark-program-samples'
+    
 
    /* {
       type: 'category',

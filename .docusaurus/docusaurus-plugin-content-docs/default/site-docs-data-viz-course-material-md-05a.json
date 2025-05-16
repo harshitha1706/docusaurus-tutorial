@@ -1,0 +1,15 @@
+{
+  "id": "data-viz-course-material",
+  "title": "Data Visualization Principles: Introduction Course",
+  "description": "Table of Contents",
+  "source": "@site/docs/data-viz-course-material.md",
+  "sourceDirName": ".",
+  "slug": "/data-viz-course-material",
+  "permalink": "/docs/data-viz-course-material",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/data-viz-course-material.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

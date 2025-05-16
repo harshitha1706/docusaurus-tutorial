@@ -1,7 +1,7 @@
 {
   "id": "Databricks",
   "title": "Databricks",
-  "description": "Databricks installation",
+  "description": "Table Of Contents",
   "source": "@site/docs/Databricks.md",
   "sourceDirName": ".",
   "slug": "/Databricks",

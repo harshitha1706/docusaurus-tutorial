@@ -1,0 +1,15 @@
+{
+  "id": "databricks-advanced-data-engineering",
+  "title": "Advanced Data Engineering with Databricks: Optimization, Productionization, and CI/CD",
+  "description": "This advanced training material focuses on optimizing Databricks data pipelines, implementing production-grade solutions, and establishing robust CI/CD practices for data engineering projects.",
+  "source": "@site/docs/databricks-advanced-data-engineering.md",
+  "sourceDirName": ".",
+  "slug": "/databricks-advanced-data-engineering",
+  "permalink": "/docs/databricks-advanced-data-engineering",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/databricks-advanced-data-engineering.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

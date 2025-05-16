@@ -249,26 +249,42 @@
     },
     "content": "content---markdown-page-393-028"
   },
-  "/docs-9a5": {
+  "/docs-5d7": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---docsaba-d7c"
     }
   },
-  "/docs-aa2": {
+  "/docs-a2d": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "__props": "__props---docs-005-788"
   },
-  "/docs-963": {
+  "/docs-6bb": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/docs/Bronze-246": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-bronzee-46-e59"
   },
+  "/docs/data-viz-course-material-a54": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-data-viz-course-material-05-a-1d3"
+  },
   "/docs/Databricks-685": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-databricks-87-d-72b"
+  },
+  "/docs/databricks-advanced-data-engineering-02e": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-databricks-advanced-data-engineering-187-280"
+  },
+  "/docs/databricks-basic-data-engineering-ebb": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-databricks-basic-data-engineering-76-c-70d"
+  },
+  "/docs/dimensional-modeling-slides-375": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-dimensional-modeling-slides-4-e-1-521"
   },
   "/docs/Gold-3f3": {
     "__comp": "__comp---theme-doc-item-178-a40",
@@ -277,6 +293,14 @@
   "/docs/intro-61d": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-intro-0-e-3-be1"
+  },
+  "/docs/pyspark-program-samples-7ff": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-pyspark-program-samples-087-818"
+  },
+  "/docs/relational-modeling-slides-b3e": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-relational-modeling-slidesca-1-fdf"
   },
   "/docs/Silver-cf4": {
     "__comp": "__comp---theme-doc-item-178-a40",

@@ -16,9 +16,25 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "data-viz-course-material",
+              "path": "/docs/data-viz-course-material"
+            },
+            {
               "id": "Databricks",
               "path": "/docs/Databricks",
               "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "databricks-advanced-data-engineering",
+              "path": "/docs/databricks-advanced-data-engineering"
+            },
+            {
+              "id": "databricks-basic-data-engineering",
+              "path": "/docs/databricks-basic-data-engineering"
+            },
+            {
+              "id": "dimensional-modeling-slides",
+              "path": "/docs/dimensional-modeling-slides"
             },
             {
               "id": "Gold",
@@ -29,6 +45,15 @@
               "id": "intro",
               "path": "/docs/intro",
               "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "pyspark-program-samples",
+              "path": "/docs/pyspark-program-samples",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "relational-modeling-slides",
+              "path": "/docs/relational-modeling-slides"
             },
             {
               "id": "Silver",

@@ -1,0 +1,24 @@
+{
+  "id": "Power BI Designer Toolkit - Dynamic Report Elements",
+  "title": "Power BI Designer Toolkit: Dynamic Report Elements",
+  "description": "A Comprehensive Implementation Guide",
+  "source": "@site/docs/Power BI Designer Toolkit - Dynamic Report Elements.md",
+  "sourceDirName": ".",
+  "slug": "/Power BI Designer Toolkit - Dynamic Report Elements",
+  "permalink": "/docs/Power BI Designer Toolkit - Dynamic Report Elements",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Power BI Designer Toolkit - Dynamic Report Elements.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "pyspark-program-samples",
+    "permalink": "/docs/pyspark-program-samples"
+  },
+  "next": {
+    "title": "Data Visualization Principles: Introduction Course",
+    "permalink": "/docs/data-viz-course-material"
+  }
+}
