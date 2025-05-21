@@ -1,63 +1,63 @@
 {
   "docusaurus-plugin-content-docs": {
     "default": {
-      "path": "/docs",
+      "path": "/docusaurus-tutorial/docs",
       "versions": [
         {
           "name": "current",
           "label": "Next",
           "isLast": true,
-          "path": "/docs",
+          "path": "/docusaurus-tutorial/docs",
           "mainDocId": "intro",
           "docs": [
             {
               "id": "Bronze",
-              "path": "/docs/Bronze",
+              "path": "/docusaurus-tutorial/docs/Bronze",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "data-viz-course-material",
-              "path": "/docs/data-viz-course-material"
+              "path": "/docusaurus-tutorial/docs/data-viz-course-material"
             },
             {
               "id": "Databricks",
-              "path": "/docs/Databricks",
+              "path": "/docusaurus-tutorial/docs/Databricks",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "databricks-advanced-data-engineering",
-              "path": "/docs/databricks-advanced-data-engineering"
+              "path": "/docusaurus-tutorial/docs/databricks-advanced-data-engineering"
             },
             {
               "id": "databricks-basic-data-engineering",
-              "path": "/docs/databricks-basic-data-engineering"
+              "path": "/docusaurus-tutorial/docs/databricks-basic-data-engineering"
             },
             {
               "id": "dimensional-modeling-slides",
-              "path": "/docs/dimensional-modeling-slides"
+              "path": "/docusaurus-tutorial/docs/dimensional-modeling-slides"
             },
             {
               "id": "Gold",
-              "path": "/docs/Gold",
+              "path": "/docusaurus-tutorial/docs/Gold",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "intro",
-              "path": "/docs/intro",
+              "path": "/docusaurus-tutorial/docs/intro",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "pyspark-program-samples",
-              "path": "/docs/pyspark-program-samples",
+              "path": "/docusaurus-tutorial/docs/pyspark-program-samples",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "relational-modeling-slides",
-              "path": "/docs/relational-modeling-slides"
+              "path": "/docusaurus-tutorial/docs/relational-modeling-slides"
             },
             {
               "id": "Silver",
-              "path": "/docs/Silver",
+              "path": "/docusaurus-tutorial/docs/Silver",
               "sidebar": "tutorialSidebar"
             }
           ],
@@ -65,7 +65,7 @@
           "sidebars": {
             "tutorialSidebar": {
               "link": {
-                "path": "/docs/intro",
+                "path": "/docusaurus-tutorial/docs/intro",
                 "label": "intro"
               }
             }

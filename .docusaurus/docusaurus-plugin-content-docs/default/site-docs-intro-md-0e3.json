@@ -5,7 +5,7 @@
   "source": "@site/docs/intro.md",
   "sourceDirName": ".",
   "slug": "/intro",
-  "permalink": "/docs/intro",
+  "permalink": "/docusaurus-tutorial/docs/intro",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/intro.md",
@@ -15,6 +15,6 @@
   "sidebar": "tutorialSidebar",
   "next": {
     "title": "Databricks",
-    "permalink": "/docs/Databricks"
+    "permalink": "/docusaurus-tutorial/docs/Databricks"
   }
 }

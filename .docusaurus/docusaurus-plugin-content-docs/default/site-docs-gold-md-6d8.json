@@ -5,7 +5,7 @@
   "source": "@site/docs/Gold.md",
   "sourceDirName": ".",
   "slug": "/Gold",
-  "permalink": "/docs/Gold",
+  "permalink": "/docusaurus-tutorial/docs/Gold",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Gold.md",
@@ -15,10 +15,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Silver",
-    "permalink": "/docs/Silver"
+    "permalink": "/docusaurus-tutorial/docs/Silver"
   },
   "next": {
     "title": "pyspark-program-samples",
-    "permalink": "/docs/pyspark-program-samples"
+    "permalink": "/docusaurus-tutorial/docs/pyspark-program-samples"
   }
 }

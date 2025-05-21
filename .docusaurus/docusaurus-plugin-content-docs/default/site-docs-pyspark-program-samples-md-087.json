@@ -5,7 +5,7 @@
   "source": "@site/docs/pyspark-program-samples.md",
   "sourceDirName": ".",
   "slug": "/pyspark-program-samples",
-  "permalink": "/docs/pyspark-program-samples",
+  "permalink": "/docusaurus-tutorial/docs/pyspark-program-samples",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/pyspark-program-samples.md",
@@ -15,6 +15,6 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Gold",
-    "permalink": "/docs/Gold"
+    "permalink": "/docusaurus-tutorial/docs/Gold"
   }
 }

@@ -3,185 +3,185 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
-    path: '/__docusaurus/debug',
-    component: ComponentCreator('/__docusaurus/debug', '5ff'),
+    path: '/docusaurus-tutorial/__docusaurus/debug',
+    component: ComponentCreator('/docusaurus-tutorial/__docusaurus/debug', 'faa'),
     exact: true
   },
   {
-    path: '/__docusaurus/debug/config',
-    component: ComponentCreator('/__docusaurus/debug/config', '5ba'),
+    path: '/docusaurus-tutorial/__docusaurus/debug/config',
+    component: ComponentCreator('/docusaurus-tutorial/__docusaurus/debug/config', '313'),
     exact: true
   },
   {
-    path: '/__docusaurus/debug/content',
-    component: ComponentCreator('/__docusaurus/debug/content', 'a2b'),
+    path: '/docusaurus-tutorial/__docusaurus/debug/content',
+    component: ComponentCreator('/docusaurus-tutorial/__docusaurus/debug/content', '490'),
     exact: true
   },
   {
-    path: '/__docusaurus/debug/globalData',
-    component: ComponentCreator('/__docusaurus/debug/globalData', 'c3c'),
+    path: '/docusaurus-tutorial/__docusaurus/debug/globalData',
+    component: ComponentCreator('/docusaurus-tutorial/__docusaurus/debug/globalData', '6c6'),
     exact: true
   },
   {
-    path: '/__docusaurus/debug/metadata',
-    component: ComponentCreator('/__docusaurus/debug/metadata', '156'),
+    path: '/docusaurus-tutorial/__docusaurus/debug/metadata',
+    component: ComponentCreator('/docusaurus-tutorial/__docusaurus/debug/metadata', '9e9'),
     exact: true
   },
   {
-    path: '/__docusaurus/debug/registry',
-    component: ComponentCreator('/__docusaurus/debug/registry', '88c'),
+    path: '/docusaurus-tutorial/__docusaurus/debug/registry',
+    component: ComponentCreator('/docusaurus-tutorial/__docusaurus/debug/registry', '41a'),
     exact: true
   },
   {
-    path: '/__docusaurus/debug/routes',
-    component: ComponentCreator('/__docusaurus/debug/routes', '000'),
+    path: '/docusaurus-tutorial/__docusaurus/debug/routes',
+    component: ComponentCreator('/docusaurus-tutorial/__docusaurus/debug/routes', '391'),
     exact: true
   },
   {
-    path: '/blog',
-    component: ComponentCreator('/blog', 'b2f'),
+    path: '/docusaurus-tutorial/blog',
+    component: ComponentCreator('/docusaurus-tutorial/blog', 'cb3'),
     exact: true
   },
   {
-    path: '/blog/archive',
-    component: ComponentCreator('/blog/archive', '182'),
+    path: '/docusaurus-tutorial/blog/archive',
+    component: ComponentCreator('/docusaurus-tutorial/blog/archive', '8c4'),
     exact: true
   },
   {
-    path: '/blog/authors',
-    component: ComponentCreator('/blog/authors', '0b7'),
+    path: '/docusaurus-tutorial/blog/authors',
+    component: ComponentCreator('/docusaurus-tutorial/blog/authors', '21b'),
     exact: true
   },
   {
-    path: '/blog/authors/all-sebastien-lorber-articles',
-    component: ComponentCreator('/blog/authors/all-sebastien-lorber-articles', '4a1'),
+    path: '/docusaurus-tutorial/blog/authors/all-sebastien-lorber-articles',
+    component: ComponentCreator('/docusaurus-tutorial/blog/authors/all-sebastien-lorber-articles', 'a4a'),
     exact: true
   },
   {
-    path: '/blog/authors/yangshun',
-    component: ComponentCreator('/blog/authors/yangshun', 'a68'),
+    path: '/docusaurus-tutorial/blog/authors/yangshun',
+    component: ComponentCreator('/docusaurus-tutorial/blog/authors/yangshun', '06b'),
     exact: true
   },
   {
-    path: '/blog/first-blog-post',
-    component: ComponentCreator('/blog/first-blog-post', '89a'),
+    path: '/docusaurus-tutorial/blog/first-blog-post',
+    component: ComponentCreator('/docusaurus-tutorial/blog/first-blog-post', '7db'),
     exact: true
   },
   {
-    path: '/blog/long-blog-post',
-    component: ComponentCreator('/blog/long-blog-post', '9ad'),
+    path: '/docusaurus-tutorial/blog/long-blog-post',
+    component: ComponentCreator('/docusaurus-tutorial/blog/long-blog-post', 'f35'),
     exact: true
   },
   {
-    path: '/blog/mdx-blog-post',
-    component: ComponentCreator('/blog/mdx-blog-post', 'e9f'),
+    path: '/docusaurus-tutorial/blog/mdx-blog-post',
+    component: ComponentCreator('/docusaurus-tutorial/blog/mdx-blog-post', '635'),
     exact: true
   },
   {
-    path: '/blog/tags',
-    component: ComponentCreator('/blog/tags', '287'),
+    path: '/docusaurus-tutorial/blog/tags',
+    component: ComponentCreator('/docusaurus-tutorial/blog/tags', '5db'),
     exact: true
   },
   {
-    path: '/blog/tags/docusaurus',
-    component: ComponentCreator('/blog/tags/docusaurus', '704'),
+    path: '/docusaurus-tutorial/blog/tags/docusaurus',
+    component: ComponentCreator('/docusaurus-tutorial/blog/tags/docusaurus', '956'),
     exact: true
   },
   {
-    path: '/blog/tags/facebook',
-    component: ComponentCreator('/blog/tags/facebook', '858'),
+    path: '/docusaurus-tutorial/blog/tags/facebook',
+    component: ComponentCreator('/docusaurus-tutorial/blog/tags/facebook', '4c3'),
     exact: true
   },
   {
-    path: '/blog/tags/hello',
-    component: ComponentCreator('/blog/tags/hello', '299'),
+    path: '/docusaurus-tutorial/blog/tags/hello',
+    component: ComponentCreator('/docusaurus-tutorial/blog/tags/hello', 'ff7'),
     exact: true
   },
   {
-    path: '/blog/tags/hola',
-    component: ComponentCreator('/blog/tags/hola', '00d'),
+    path: '/docusaurus-tutorial/blog/tags/hola',
+    component: ComponentCreator('/docusaurus-tutorial/blog/tags/hola', '551'),
     exact: true
   },
   {
-    path: '/blog/welcome',
-    component: ComponentCreator('/blog/welcome', 'd2b'),
+    path: '/docusaurus-tutorial/blog/welcome',
+    component: ComponentCreator('/docusaurus-tutorial/blog/welcome', 'f7e'),
     exact: true
   },
   {
-    path: '/markdown-page',
-    component: ComponentCreator('/markdown-page', '3d7'),
+    path: '/docusaurus-tutorial/markdown-page',
+    component: ComponentCreator('/docusaurus-tutorial/markdown-page', '7e5'),
     exact: true
   },
   {
-    path: '/docs',
-    component: ComponentCreator('/docs', '5d7'),
+    path: '/docusaurus-tutorial/docs',
+    component: ComponentCreator('/docusaurus-tutorial/docs', '6a6'),
     routes: [
       {
-        path: '/docs',
-        component: ComponentCreator('/docs', 'a2d'),
+        path: '/docusaurus-tutorial/docs',
+        component: ComponentCreator('/docusaurus-tutorial/docs', '7e3'),
         routes: [
           {
-            path: '/docs',
-            component: ComponentCreator('/docs', '6bb'),
+            path: '/docusaurus-tutorial/docs',
+            component: ComponentCreator('/docusaurus-tutorial/docs', 'a80'),
             routes: [
               {
-                path: '/docs/Bronze',
-                component: ComponentCreator('/docs/Bronze', '246'),
+                path: '/docusaurus-tutorial/docs/Bronze',
+                component: ComponentCreator('/docusaurus-tutorial/docs/Bronze', '405'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/data-viz-course-material',
-                component: ComponentCreator('/docs/data-viz-course-material', 'a54'),
+                path: '/docusaurus-tutorial/docs/data-viz-course-material',
+                component: ComponentCreator('/docusaurus-tutorial/docs/data-viz-course-material', '165'),
                 exact: true
               },
               {
-                path: '/docs/Databricks',
-                component: ComponentCreator('/docs/Databricks', '685'),
+                path: '/docusaurus-tutorial/docs/Databricks',
+                component: ComponentCreator('/docusaurus-tutorial/docs/Databricks', '745'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/databricks-advanced-data-engineering',
-                component: ComponentCreator('/docs/databricks-advanced-data-engineering', '02e'),
+                path: '/docusaurus-tutorial/docs/databricks-advanced-data-engineering',
+                component: ComponentCreator('/docusaurus-tutorial/docs/databricks-advanced-data-engineering', '843'),
                 exact: true
               },
               {
-                path: '/docs/databricks-basic-data-engineering',
-                component: ComponentCreator('/docs/databricks-basic-data-engineering', 'ebb'),
+                path: '/docusaurus-tutorial/docs/databricks-basic-data-engineering',
+                component: ComponentCreator('/docusaurus-tutorial/docs/databricks-basic-data-engineering', 'e31'),
                 exact: true
               },
               {
-                path: '/docs/dimensional-modeling-slides',
-                component: ComponentCreator('/docs/dimensional-modeling-slides', '375'),
+                path: '/docusaurus-tutorial/docs/dimensional-modeling-slides',
+                component: ComponentCreator('/docusaurus-tutorial/docs/dimensional-modeling-slides', 'c4c'),
                 exact: true
               },
               {
-                path: '/docs/Gold',
-                component: ComponentCreator('/docs/Gold', '3f3'),
+                path: '/docusaurus-tutorial/docs/Gold',
+                component: ComponentCreator('/docusaurus-tutorial/docs/Gold', 'b15'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/intro',
-                component: ComponentCreator('/docs/intro', '61d'),
+                path: '/docusaurus-tutorial/docs/intro',
+                component: ComponentCreator('/docusaurus-tutorial/docs/intro', '985'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/pyspark-program-samples',
-                component: ComponentCreator('/docs/pyspark-program-samples', '7ff'),
+                path: '/docusaurus-tutorial/docs/pyspark-program-samples',
+                component: ComponentCreator('/docusaurus-tutorial/docs/pyspark-program-samples', '0c0'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/relational-modeling-slides',
-                component: ComponentCreator('/docs/relational-modeling-slides', 'b3e'),
+                path: '/docusaurus-tutorial/docs/relational-modeling-slides',
+                component: ComponentCreator('/docusaurus-tutorial/docs/relational-modeling-slides', '5f6'),
                 exact: true
               },
               {
-                path: '/docs/Silver',
-                component: ComponentCreator('/docs/Silver', 'cf4'),
+                path: '/docusaurus-tutorial/docs/Silver',
+                component: ComponentCreator('/docusaurus-tutorial/docs/Silver', 'fad'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               }
@@ -192,8 +192,8 @@ export default [
     ]
   },
   {
-    path: '/',
-    component: ComponentCreator('/', '2e1'),
+    path: '/docusaurus-tutorial/',
+    component: ComponentCreator('/docusaurus-tutorial/', 'aff'),
     exact: true
   },
   {

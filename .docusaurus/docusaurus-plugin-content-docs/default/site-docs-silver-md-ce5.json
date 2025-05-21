@@ -5,7 +5,7 @@
   "source": "@site/docs/Silver.md",
   "sourceDirName": ".",
   "slug": "/Silver",
-  "permalink": "/docs/Silver",
+  "permalink": "/docusaurus-tutorial/docs/Silver",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Silver.md",
@@ -15,10 +15,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Bronze",
-    "permalink": "/docs/Bronze"
+    "permalink": "/docusaurus-tutorial/docs/Bronze"
   },
   "next": {
     "title": "Gold",
-    "permalink": "/docs/Gold"
+    "permalink": "/docusaurus-tutorial/docs/Gold"
   }
 }

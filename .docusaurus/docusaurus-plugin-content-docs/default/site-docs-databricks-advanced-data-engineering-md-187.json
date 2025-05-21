@@ -5,7 +5,7 @@
   "source": "@site/docs/databricks-advanced-data-engineering.md",
   "sourceDirName": ".",
   "slug": "/databricks-advanced-data-engineering",
-  "permalink": "/docs/databricks-advanced-data-engineering",
+  "permalink": "/docusaurus-tutorial/docs/databricks-advanced-data-engineering",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/databricks-advanced-data-engineering.md",
