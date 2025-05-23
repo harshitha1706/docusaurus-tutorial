@@ -20,7 +20,8 @@ Check the [documentation](https://docs.databricks.com/aws/en/dev-tools/cli/insta
 
 Databricks is a cloud-based data analytics and AI platform built on Apache Spark. It helps businesses process, analyze, and visualize large amounts of data efficiently using Big Data, Machine Learning, and AI.
 
-[Docusaurus](../static/img/docusaurus.png)
+![Docusaurus](/img/docusaurus.png)
+
 
 
 
