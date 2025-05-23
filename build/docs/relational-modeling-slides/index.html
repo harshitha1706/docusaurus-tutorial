@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-relational-modeling-slides" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.7.0">
+<title data-rh="true">Relational Data Modeling: An Introduction | My Site</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://harshitha1706.github.io/docusaurus-tutorial/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://harshitha1706.github.io/docusaurus-tutorial/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://harshitha1706.github.io/docusaurus-tutorial/docs/relational-modeling-slides"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Relational Data Modeling: An Introduction | My Site"><meta data-rh="true" name="description" content="What is Relational Data Modeling?"><meta data-rh="true" property="og:description" content="What is Relational Data Modeling?"><link data-rh="true" rel="icon" href="/docusaurus-tutorial/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://harshitha1706.github.io/docusaurus-tutorial/docs/relational-modeling-slides"><link data-rh="true" rel="alternate" href="https://harshitha1706.github.io/docusaurus-tutorial/docs/relational-modeling-slides" hreflang="en"><link data-rh="true" rel="alternate" href="https://harshitha1706.github.io/docusaurus-tutorial/docs/relational-modeling-slides" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/docusaurus-tutorial/blog/rss.xml" title="My Site RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/docusaurus-tutorial/blog/atom.xml" title="My Site Atom Feed"><link rel="stylesheet" href="/docusaurus-tutorial/assets/css/styles.e9eb250e.css">
+<script src="/docusaurus-tutorial/assets/js/runtime~main.b9417ec5.js" defer="defer"></script>
+<script src="/docusaurus-tutorial/assets/js/main.ba7edd9c.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/docusaurus-tutorial/img/logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/docusaurus-tutorial/"><div class="navbar__logo"><img src="/docusaurus-tutorial/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/docusaurus-tutorial/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">My Site</b></a><a class="navbar__item navbar__link" href="/docusaurus-tutorial/docs/intro">Tutorial</a><a class="navbar__item navbar__link" href="/docusaurus-tutorial/blog">Blog</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><main class="docMainContainer_TBSr docMainContainerEnhanced_lQrH"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Relational Data Modeling: An Introduction</h1></header>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-is-relational-data-modeling">What is Relational Data Modeling?<a href="#what-is-relational-data-modeling" class="hash-link" aria-label="Direct link to What is Relational Data Modeling?" title="Direct link to What is Relational Data Modeling?">​</a></h2>
+<ul>
+<li>Process of organizing data into related tables (relations)</li>
+<li>Foundation of relational database design</li>
+<li>Based on relational theory developed by E.F. Codd</li>
+<li>Focuses on data integrity, consistency, and reducing redundancy</li>
+<li>Maps real-world entities and relationships to tables</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="key-concepts">Key Concepts<a href="#key-concepts" class="hash-link" aria-label="Direct link to Key Concepts" title="Direct link to Key Concepts">​</a></h2>
+<ul>
+<li><strong>Entity</strong>: Person, place, thing, or concept about which we store data</li>
+<li><strong>Attribute</strong>: Property or characteristic of an entity</li>
+<li><strong>Relation</strong>: A table that stores data about entities</li>
+<li><strong>Tuple</strong>: A row in a relation (represents a single entity instance)</li>
+<li><strong>Schema</strong>: Structure of a database (relations, attributes, constraints)</li>
+<li><strong>Key</strong>: Attribute(s) that uniquely identify tuples in a relation</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="types-of-keys">Types of Keys<a href="#types-of-keys" class="hash-link" aria-label="Direct link to Types of Keys" title="Direct link to Types of Keys">​</a></h2>
+<ul>
+<li><strong>Superkey</strong>: Set of attributes that uniquely identifies each tuple</li>
+<li><strong>Candidate Key</strong>: Minimal superkey (no unnecessary attributes)</li>
+<li><strong>Primary Key</strong>: Candidate key chosen to uniquely identify tuples</li>
+<li><strong>Foreign Key</strong>: Attribute(s) that references a primary key in another relation</li>
+<li><strong>Composite Key</strong>: Key consisting of multiple attributes</li>
+</ul>
+<p><strong>Example</strong>: In a Student table, <code>StudentID</code> might be the primary key, while in a Course_Enrollment table, (<code>StudentID</code>, <code>CourseID</code>) might form a composite primary key.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="database-schema-example">Database Schema Example<a href="#database-schema-example" class="hash-link" aria-label="Direct link to Database Schema Example" title="Direct link to Database Schema Example">​</a></h2>
+<p>Let&#x27;s use an academic database example:</p>
+<p><strong>STUDENT</strong></p>
+<ul>
+<li>StudentID (PK)</li>
+<li>FirstName</li>
+<li>LastName</li>
+<li>Email</li>
+<li>DOB</li>
+<li>DepartmentID (FK)</li>
+</ul>
+<p><strong>DEPARTMENT</strong></p>
+<ul>
+<li>DepartmentID (PK)</li>
+<li>DepartmentName</li>
+<li>Building</li>
+<li>Budget</li>
+</ul>
+<p><strong>COURSE</strong></p>
+<ul>
+<li>CourseID (PK)</li>
+<li>Title</li>
+<li>Credits</li>
+<li>DepartmentID (FK)</li>
+</ul>
+<p><strong>ENROLLMENT</strong></p>
+<ul>
+<li>StudentID (PK, FK)</li>
+<li>CourseID (PK, FK)</li>
+<li>Semester</li>
+<li>Year</li>
+<li>Grade</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="relationships-between-entities">Relationships Between Entities<a href="#relationships-between-entities" class="hash-link" aria-label="Direct link to Relationships Between Entities" title="Direct link to Relationships Between Entities">​</a></h2>
+<ul>
+<li><strong>One-to-One (1:1)</strong>: Entity in relation A relates to at most one entity in relation B</li>
+<li><strong>One-to-Many (1<!-- -->:N<!-- -->)</strong>: Entity in relation A relates to multiple entities in relation B</li>
+<li><strong>Many-to-Many (M<!-- -->:N<!-- -->)</strong>: Multiple entities in relation A relate to multiple entities in relation B</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="example-one-to-one-relationship">Example: One-to-One Relationship<a href="#example-one-to-one-relationship" class="hash-link" aria-label="Direct link to Example: One-to-One Relationship" title="Direct link to Example: One-to-One Relationship">​</a></h2>
+<p><strong>PROFESSOR</strong></p>
+<ul>
+<li>ProfessorID (PK)</li>
+<li>Name</li>
+<li>Department</li>
+</ul>
+<p><strong>OFFICE</strong></p>
+<ul>
+<li>OfficeID (PK)</li>
+<li>Building</li>
+<li>RoomNumber</li>
+<li>ProfessorID (FK) - unique constraint enforces 1:1</li>
+</ul>
+<p>Each professor has at most one office, and each office belongs to at most one professor.</p>
+<p><strong>One-to-One Relationship Diagram:</strong></p>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">PROFESSOR                    OFFICE</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">+-----------+               +----------+</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">|ProfessorID|──────────────&gt;|OfficeID  |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">|Name       |               |Building  |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">|Department |&lt;--------------+RoomNumber|</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">+-----------+               |ProfessorID|</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                            +----------+</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="example-one-to-many-relationship">Example: One-to-Many Relationship<a href="#example-one-to-many-relationship" class="hash-link" aria-label="Direct link to Example: One-to-Many Relationship" title="Direct link to Example: One-to-Many Relationship">​</a></h2>
+<p><strong>DEPARTMENT</strong></p>
+<ul>
+<li>DepartmentID (PK)</li>
+<li>DepartmentName</li>
+</ul>
+<p><strong>STUDENT</strong></p>
+<ul>
+<li>StudentID (PK)</li>
+<li>Name</li>
+<li>DepartmentID (FK)</li>
+</ul>
+<p>Each department can have many students, but each student belongs to only one department.</p>
+<p><strong>One-to-Many Relationship Diagram:</strong></p>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">DEPARTMENT                   STUDENT</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">+------------+               +----------+</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">|DepartmentID|───────────────┼──&gt;|StudentID |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">|DepartmentName|             |Name      |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">+------------+               |DepartmentID|</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">     |                       +----------+</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">     |                            |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">     |                            |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">     └────────────────────────────┘</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        One department has many students</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="example-many-to-many-relationship">Example: Many-to-Many Relationship<a href="#example-many-to-many-relationship" class="hash-link" aria-label="Direct link to Example: Many-to-Many Relationship" title="Direct link to Example: Many-to-Many Relationship">​</a></h2>
+<p>Requires a junction/linking table:</p>
+<p><strong>STUDENT</strong></p>
+<ul>
+<li>StudentID (PK)</li>
+<li>Name</li>
+</ul>
+<p><strong>COURSE</strong></p>
+<ul>
+<li>CourseID (PK)</li>
+<li>Title</li>
+</ul>
+<p><strong>ENROLLMENT</strong> (Junction Table)</p>
+<ul>
+<li>StudentID (PK, FK)</li>
+<li>CourseID (PK, FK)</li>
+<li>Semester</li>
+<li>Grade</li>
+</ul>
+<p>A student can enroll in many courses, and a course can have many students.</p>
+<p><strong>Many-to-Many Relationship Diagram:</strong></p>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">STUDENT                 ENROLLMENT                 COURSE</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">+----------+            +------------+            +----------+</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">|StudentID |&lt;---------- |StudentID   |-----------&gt;|CourseID  |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">|Name      |            |CourseID    |            |Title     |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">+----------+            |Semester    |            +----------+</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                        |Grade       |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                        +------------+</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="database-design-process">Database Design Process<a href="#database-design-process" class="hash-link" aria-label="Direct link to Database Design Process" title="Direct link to Database Design Process">​</a></h2>
+<ol>
+<li><strong>Requirements Analysis</strong>: Understand the problem domain</li>
+<li><strong>Conceptual Design</strong>: Create an ER (Entity-Relationship) diagram</li>
+<li><strong>Logical Design</strong>: Transform ER diagram into relational model</li>
+<li><strong>Normalization</strong>: Refine the logical model to minimize redundancy</li>
+<li><strong>Physical Design</strong>: Implement the database with specific DBMS features</li>
+<li><strong>Implementation</strong>: Create the database and load initial data</li>
+</ol>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="entity-relationship-er-modeling">Entity-Relationship (ER) Modeling<a href="#entity-relationship-er-modeling" class="hash-link" aria-label="Direct link to Entity-Relationship (ER) Modeling" title="Direct link to Entity-Relationship (ER) Modeling">​</a></h2>
+<ul>
+<li>Graphical technique for representing database structure</li>
+<li>Common notation: Chen notation, Crow&#x27;s Foot notation</li>
+<li>Components:<!-- -->
+<ul>
+<li>Entities (rectangles)</li>
+<li>Attributes (ovals)</li>
+<li>Relationships (diamonds/lines)</li>
+<li>Cardinality constraints (symbols on relationship lines)</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="er-diagram-example">ER Diagram Example<a href="#er-diagram-example" class="hash-link" aria-label="Direct link to ER Diagram Example" title="Direct link to ER Diagram Example">​</a></h2>
+<p>Library Management System:</p>
+<p><strong>Library Management System ER Diagram:</strong></p>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">                   writes</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    +--------+    +---------+    +------+</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    |        |----| AuthorID |----|      |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    | AUTHOR |    | BookID   |    | BOOK |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    |        |    +---------+    |      |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    +--------+                   +------+</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        |                           |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        |                           |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        |                           |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        |                           |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        |                           |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        |                borrows    |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        |              +---------+  |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        |              | MemberID|  |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        |              | BookID  |  |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        |              | DueDate |  |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        |              +---------+  |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        |                   |       |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    +--------+              |  +------+</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    |        |              |  |      |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    | MEMBER |--------------+  | LOAN |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    |        |                 |      |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    +--------+                 +------+</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<ul>
+<li><strong>Entities</strong>: Book, Author, Member, Loan</li>
+<li><strong>Relationships</strong>: writes (Author-Book), borrows (Member-Book)</li>
+<li><strong>Attributes</strong>: BookID, Title, AuthorID, Name, etc.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="converting-er-diagrams-to-relations">Converting ER Diagrams to Relations<a href="#converting-er-diagrams-to-relations" class="hash-link" aria-label="Direct link to Converting ER Diagrams to Relations" title="Direct link to Converting ER Diagrams to Relations">​</a></h2>
+<ol>
+<li>Each entity type becomes a relation</li>
+<li>Attributes of entity become attributes of relation</li>
+<li>Primary key of entity becomes primary key of relation</li>
+<li>1:1 relationships: Foreign key in either relation</li>
+<li>1<!-- -->:N<!-- --> relationships: Foreign key in the &quot;N&quot; relation</li>
+<li>M<!-- -->:N<!-- --> relationships: Create a new relation (junction table)</li>
+</ol>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="example-converting-er-to-relations">Example: Converting ER to Relations<a href="#example-converting-er-to-relations" class="hash-link" aria-label="Direct link to Example: Converting ER to Relations" title="Direct link to Example: Converting ER to Relations">​</a></h2>
+<p>ER Diagram: Author (1) --- writes --- (N) Book</p>
+<p>Becomes:</p>
+<p><strong>AUTHOR</strong></p>
+<ul>
+<li>AuthorID (PK)</li>
+<li>Name</li>
+<li>Birthdate</li>
+</ul>
+<p><strong>BOOK</strong></p>
+<ul>
+<li>BookID (PK)</li>
+<li>Title</li>
+<li>PublicationYear</li>
+<li>AuthorID (FK)</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="normalization">Normalization<a href="#normalization" class="hash-link" aria-label="Direct link to Normalization" title="Direct link to Normalization">​</a></h2>
+<ul>
+<li>Process of organizing data to minimize redundancy</li>
+<li>Reduces anomalies (update, insert, delete)</li>
+<li>Series of normal forms (1NF, 2NF, 3NF, BCNF, 4NF, 5NF)</li>
+<li>Each form requires specific conditions</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="first-normal-form-1nf">First Normal Form (1NF)<a href="#first-normal-form-1nf" class="hash-link" aria-label="Direct link to First Normal Form (1NF)" title="Direct link to First Normal Form (1NF)">​</a></h2>
+<ul>
+<li>Each cell must contain a single atomic value</li>
+<li>No repeating groups or arrays</li>
+</ul>
+<p><strong>Not in 1NF</strong>:</p>
+<table><thead><tr><th>StudentID</th><th>Name</th><th>Courses</th></tr></thead><tbody><tr><td>S1</td><td>John</td><td>Math, Physics, Chemistry</td></tr><tr><td>S2</td><td>Mary</td><td>Biology, English</td></tr></tbody></table>
+<p><strong>In 1NF</strong>:</p>
+<table><thead><tr><th>StudentID</th><th>Name</th><th>Course</th></tr></thead><tbody><tr><td>S1</td><td>John</td><td>Math</td></tr><tr><td>S1</td><td>John</td><td>Physics</td></tr><tr><td>S1</td><td>John</td><td>Chemistry</td></tr><tr><td>S2</td><td>Mary</td><td>Biology</td></tr><tr><td>S2</td><td>Mary</td><td>English</td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="second-normal-form-2nf">Second Normal Form (2NF)<a href="#second-normal-form-2nf" class="hash-link" aria-label="Direct link to Second Normal Form (2NF)" title="Direct link to Second Normal Form (2NF)">​</a></h2>
+<ul>
+<li>Must be in 1NF</li>
+<li>No partial dependencies (non-key attributes must depend on the entire primary key)</li>
+</ul>
+<p><strong>Not in 2NF</strong>:</p>
+<table><thead><tr><th>StudentID</th><th>CourseID</th><th>CourseName</th><th>Grade</th></tr></thead><tbody><tr><td>S1</td><td>C1</td><td>Math</td><td>A</td></tr><tr><td>S1</td><td>C2</td><td>Physics</td><td>B</td></tr><tr><td>S2</td><td>C1</td><td>Math</td><td>C</td></tr></tbody></table>
+<p><strong>In 2NF</strong>:
+<strong>ENROLLMENT</strong>:</p>
+<table><thead><tr><th>StudentID</th><th>CourseID</th><th>Grade</th></tr></thead><tbody><tr><td>S1</td><td>C1</td><td>A</td></tr><tr><td>S1</td><td>C2</td><td>B</td></tr><tr><td>S2</td><td>C1</td><td>C</td></tr></tbody></table>
+<p><strong>COURSE</strong>:</p>
+<table><thead><tr><th>CourseID</th><th>CourseName</th></tr></thead><tbody><tr><td>C1</td><td>Math</td></tr><tr><td>C2</td><td>Physics</td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="third-normal-form-3nf">Third Normal Form (3NF)<a href="#third-normal-form-3nf" class="hash-link" aria-label="Direct link to Third Normal Form (3NF)" title="Direct link to Third Normal Form (3NF)">​</a></h2>
+<ul>
+<li>Must be in 2NF</li>
+<li>No transitive dependencies (non-key attributes must not depend on other non-key attributes)</li>
+</ul>
+<p><strong>Not in 3NF</strong>:</p>
+<table><thead><tr><th>StudentID</th><th>DepartmentID</th><th>DepartmentName</th><th>Advisor</th></tr></thead><tbody><tr><td>S1</td><td>D1</td><td>Computer Sci</td><td>Prof. Smith</td></tr><tr><td>S2</td><td>D2</td><td>Physics</td><td>Prof. Jones</td></tr><tr><td>S3</td><td>D1</td><td>Computer Sci</td><td>Prof. Smith</td></tr></tbody></table>
+<p><strong>In 3NF</strong>:
+<strong>STUDENT</strong>:</p>
+<table><thead><tr><th>StudentID</th><th>DepartmentID</th><th>Advisor</th></tr></thead><tbody><tr><td>S1</td><td>D1</td><td>Prof. Smith</td></tr><tr><td>S2</td><td>D2</td><td>Prof. Jones</td></tr><tr><td>S3</td><td>D1</td><td>Prof. Smith</td></tr></tbody></table>
+<p><strong>DEPARTMENT</strong>:</p>
+<table><thead><tr><th>DepartmentID</th><th>DepartmentName</th></tr></thead><tbody><tr><td>D1</td><td>Computer Sci</td></tr><tr><td>D2</td><td>Physics</td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="denormalization">Denormalization<a href="#denormalization" class="hash-link" aria-label="Direct link to Denormalization" title="Direct link to Denormalization">​</a></h2>
+<ul>
+<li>Strategic decision to allow redundancy for performance</li>
+<li>Used when query performance outweighs update concerns</li>
+<li>Common in data warehousing and reporting databases</li>
+</ul>
+<p><strong>Example</strong>: Denormalized student enrollment information for reporting</p>
+<table><thead><tr><th>StudentID</th><th>StudentName</th><th>CourseID</th><th>CourseName</th><th>Instructor</th><th>Grade</th></tr></thead><tbody><tr><td>S1</td><td>John</td><td>C1</td><td>Math</td><td>Prof. Smith</td><td>A</td></tr><tr><td>S1</td><td>John</td><td>C2</td><td>Physics</td><td>Prof. Jones</td><td>B</td></tr><tr><td>S2</td><td>Mary</td><td>C1</td><td>Math</td><td>Prof. Smith</td><td>C</td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="constraints-in-relational-model">Constraints in Relational Model<a href="#constraints-in-relational-model" class="hash-link" aria-label="Direct link to Constraints in Relational Model" title="Direct link to Constraints in Relational Model">​</a></h2>
+<ul>
+<li><strong>Domain Constraints</strong>: Valid values for attributes</li>
+<li><strong>Key Constraints</strong>: Uniqueness of primary keys</li>
+<li><strong>Entity Integrity</strong>: Primary key values cannot be null</li>
+<li><strong>Referential Integrity</strong>: Foreign keys must match existing primary keys or be null</li>
+<li><strong>CHECK Constraints</strong>: Custom validation rules</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="example-database-schema-with-constraints">Example Database Schema with Constraints<a href="#example-database-schema-with-constraints" class="hash-link" aria-label="Direct link to Example Database Schema with Constraints" title="Direct link to Example Database Schema with Constraints">​</a></h2>
+<div class="language-sql codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-sql codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">CREATE</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">TABLE</span><span class="token plain"> Department </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    DeptID </span><span class="token keyword" style="color:#00009f">INT</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">PRIMARY</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">KEY</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    DeptName </span><span class="token keyword" style="color:#00009f">VARCHAR</span><span class="token punctuation" style="color:#393A34">(</span><span class="token number" style="color:#36acaa">50</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">NOT</span><span class="token plain"> </span><span class="token boolean" style="color:#36acaa">NULL</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">UNIQUE</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    Budget </span><span class="token keyword" style="color:#00009f">DECIMAL</span><span class="token punctuation" style="color:#393A34">(</span><span class="token number" style="color:#36acaa">15</span><span class="token punctuation" style="color:#393A34">,</span><span class="token number" style="color:#36acaa">2</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">CHECK</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">Budget </span><span class="token operator" style="color:#393A34">&gt;</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">0</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">CREATE</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">TABLE</span><span class="token plain"> Employee </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    EmpID </span><span class="token keyword" style="color:#00009f">INT</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">PRIMARY</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">KEY</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    Name </span><span class="token keyword" style="color:#00009f">VARCHAR</span><span class="token punctuation" style="color:#393A34">(</span><span class="token number" style="color:#36acaa">100</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">NOT</span><span class="token plain"> </span><span class="token boolean" style="color:#36acaa">NULL</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    Salary </span><span class="token keyword" style="color:#00009f">DECIMAL</span><span class="token punctuation" style="color:#393A34">(</span><span class="token number" style="color:#36acaa">10</span><span class="token punctuation" style="color:#393A34">,</span><span class="token number" style="color:#36acaa">2</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">CHECK</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">Salary </span><span class="token operator" style="color:#393A34">&gt;=</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">0</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    DeptID </span><span class="token keyword" style="color:#00009f">INT</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">FOREIGN</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">KEY</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">DeptID</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">REFERENCES</span><span class="token plain"> Department</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">DeptID</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="real-world-example-e-commerce-database">Real-World Example: E-Commerce Database<a href="#real-world-example-e-commerce-database" class="hash-link" aria-label="Direct link to Real-World Example: E-Commerce Database" title="Direct link to Real-World Example: E-Commerce Database">​</a></h2>
+<p><strong>CUSTOMER</strong></p>
+<ul>
+<li>CustomerID (PK)</li>
+<li>Name</li>
+<li>Email</li>
+<li>Address</li>
+</ul>
+<p><strong>PRODUCT</strong></p>
+<ul>
+<li>ProductID (PK)</li>
+<li>Name</li>
+<li>Description</li>
+<li>Price</li>
+<li>StockQuantity</li>
+</ul>
+<p><strong>ORDER</strong></p>
+<ul>
+<li>OrderID (PK)</li>
+<li>CustomerID (FK)</li>
+<li>OrderDate</li>
+<li>Status</li>
+</ul>
+<p><strong>ORDER_ITEM</strong></p>
+<ul>
+<li>OrderID (PK, FK)</li>
+<li>ProductID (PK, FK)</li>
+<li>Quantity</li>
+<li>UnitPrice</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="best-practices-in-relational-modeling">Best Practices in Relational Modeling<a href="#best-practices-in-relational-modeling" class="hash-link" aria-label="Direct link to Best Practices in Relational Modeling" title="Direct link to Best Practices in Relational Modeling">​</a></h2>
+<ol>
+<li>Choose meaningful entity and attribute names</li>
+<li>Assign appropriate data types and constraints</li>
+<li>Use surrogate keys (e.g., auto-increment IDs) for stability</li>
+<li>Normalize to at least 3NF for OLTP systems</li>
+<li>Document relationships and constraints</li>
+<li>Consider performance implications for large datasets</li>
+<li>Validate the model with sample queries and use cases</li>
+</ol>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="relational-model-advantages">Relational Model Advantages<a href="#relational-model-advantages" class="hash-link" aria-label="Direct link to Relational Model Advantages" title="Direct link to Relational Model Advantages">​</a></h2>
+<ul>
+<li><strong>Data Independence</strong>: Physical storage details are hidden</li>
+<li><strong>Simple Structure</strong>: Tables are easy to understand</li>
+<li><strong>Flexibility</strong>: Ad-hoc queries via SQL</li>
+<li><strong>Data Integrity</strong>: Constraints ensure valid data</li>
+<li><strong>Consistency</strong>: Reduced redundancy through normalization</li>
+<li><strong>Security</strong>: Access control at various levels</li>
+<li><strong>Standardization</strong>: SQL is widely adopted</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="common-challenges-in-relational-modeling">Common Challenges in Relational Modeling<a href="#common-challenges-in-relational-modeling" class="hash-link" aria-label="Direct link to Common Challenges in Relational Modeling" title="Direct link to Common Challenges in Relational Modeling">​</a></h2>
+<ul>
+<li>Modeling hierarchical or network structures</li>
+<li>Handling many-to-many relationships efficiently</li>
+<li>Balancing normalization against performance</li>
+<li>Managing temporal data and historical changes</li>
+<li>Scaling with very large datasets (big data)</li>
+<li>Object-relational impedance mismatch</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="beyond-traditional-relational-model">Beyond Traditional Relational Model<a href="#beyond-traditional-relational-model" class="hash-link" aria-label="Direct link to Beyond Traditional Relational Model" title="Direct link to Beyond Traditional Relational Model">​</a></h2>
+<ul>
+<li><strong>Object-Relational Databases</strong>: Extend relational model with object-oriented features</li>
+<li><strong>NoSQL Databases</strong>: Alternative models for specific use cases<!-- -->
+<ul>
+<li>Document stores (MongoDB)</li>
+<li>Graph databases (Neo4j)</li>
+<li>Key-value stores (Redis)</li>
+<li>Column-family stores (Cassandra)</li>
+</ul>
+</li>
+<li><strong>NewSQL</strong>: Combining relational guarantees with NoSQL scalability</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="summary">Summary<a href="#summary" class="hash-link" aria-label="Direct link to Summary" title="Direct link to Summary">​</a></h2>
+<ul>
+<li>Relational modeling organizes data into related tables</li>
+<li>Tables are connected through keys (primary and foreign)</li>
+<li>Entity-relationship diagrams help visualize database structure</li>
+<li>Normalization reduces redundancy and anomalies</li>
+<li>Different types of relationships (1:1, 1<!-- -->:N<!-- -->, M<!-- -->:N<!-- -->) require different modeling approaches</li>
+<li>Constraints ensure data integrity</li>
+<li>The relational model balances structure, integrity, and flexibility</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="practice-exercises">Practice Exercises<a href="#practice-exercises" class="hash-link" aria-label="Direct link to Practice Exercises" title="Direct link to Practice Exercises">​</a></h2>
+<ol>
+<li>Design a relational model for a simple university system.</li>
+<li>Convert the following ER diagram to a relational schema: [Placeholder for ER diagram]</li>
+<li>Identify normalization problems in the following table and decompose it into 3NF.</li>
+<li>Design a database schema for a hospital management system with at least 5 entities.</li>
+</ol></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/relational-modeling-slides.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#what-is-relational-data-modeling" class="table-of-contents__link toc-highlight">What is Relational Data Modeling?</a></li><li><a href="#key-concepts" class="table-of-contents__link toc-highlight">Key Concepts</a></li><li><a href="#types-of-keys" class="table-of-contents__link toc-highlight">Types of Keys</a></li><li><a href="#database-schema-example" class="table-of-contents__link toc-highlight">Database Schema Example</a></li><li><a href="#relationships-between-entities" class="table-of-contents__link toc-highlight">Relationships Between Entities</a></li><li><a href="#example-one-to-one-relationship" class="table-of-contents__link toc-highlight">Example: One-to-One Relationship</a></li><li><a href="#example-one-to-many-relationship" class="table-of-contents__link toc-highlight">Example: One-to-Many Relationship</a></li><li><a href="#example-many-to-many-relationship" class="table-of-contents__link toc-highlight">Example: Many-to-Many Relationship</a></li><li><a href="#database-design-process" class="table-of-contents__link toc-highlight">Database Design Process</a></li><li><a href="#entity-relationship-er-modeling" class="table-of-contents__link toc-highlight">Entity-Relationship (ER) Modeling</a></li><li><a href="#er-diagram-example" class="table-of-contents__link toc-highlight">ER Diagram Example</a></li><li><a href="#converting-er-diagrams-to-relations" class="table-of-contents__link toc-highlight">Converting ER Diagrams to Relations</a></li><li><a href="#example-converting-er-to-relations" class="table-of-contents__link toc-highlight">Example: Converting ER to Relations</a></li><li><a href="#normalization" class="table-of-contents__link toc-highlight">Normalization</a></li><li><a href="#first-normal-form-1nf" class="table-of-contents__link toc-highlight">First Normal Form (1NF)</a></li><li><a href="#second-normal-form-2nf" class="table-of-contents__link toc-highlight">Second Normal Form (2NF)</a></li><li><a href="#third-normal-form-3nf" class="table-of-contents__link toc-highlight">Third Normal Form (3NF)</a></li><li><a href="#denormalization" class="table-of-contents__link toc-highlight">Denormalization</a></li><li><a href="#constraints-in-relational-model" class="table-of-contents__link toc-highlight">Constraints in Relational Model</a></li><li><a href="#example-database-schema-with-constraints" class="table-of-contents__link toc-highlight">Example Database Schema with Constraints</a></li><li><a href="#real-world-example-e-commerce-database" class="table-of-contents__link toc-highlight">Real-World Example: E-Commerce Database</a></li><li><a href="#best-practices-in-relational-modeling" class="table-of-contents__link toc-highlight">Best Practices in Relational Modeling</a></li><li><a href="#relational-model-advantages" class="table-of-contents__link toc-highlight">Relational Model Advantages</a></li><li><a href="#common-challenges-in-relational-modeling" class="table-of-contents__link toc-highlight">Common Challenges in Relational Modeling</a></li><li><a href="#beyond-traditional-relational-model" class="table-of-contents__link toc-highlight">Beyond Traditional Relational Model</a></li><li><a href="#summary" class="table-of-contents__link toc-highlight">Summary</a></li><li><a href="#practice-exercises" class="table-of-contents__link toc-highlight">Practice Exercises</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docusaurus-tutorial/docs/intro">Tutorial</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docusaurus-tutorial/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

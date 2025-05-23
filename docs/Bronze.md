@@ -8,6 +8,6 @@ The Bronze layer is where we land all the data from external source systems. The
 
 
 
-![medallion](/img/docusaurus.png)
+![medallion](/img/medallion.png)
 
 
