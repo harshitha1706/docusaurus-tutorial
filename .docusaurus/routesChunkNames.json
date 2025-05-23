@@ -1,316 +1,273 @@
 {
-  "/docusaurus-tutorial/__docusaurus/debug-faa": {
-    "__comp": "__comp---theme-debug-config-23-a-2ff",
-    "__context": {
-      "plugin": "plugin---docusaurus-tutorial-docusaurus-debugb-38-516"
-    }
-  },
-  "/docusaurus-tutorial/__docusaurus/debug/config-313": {
-    "__comp": "__comp---theme-debug-config-23-a-2ff",
-    "__context": {
-      "plugin": "plugin---docusaurus-tutorial-docusaurus-debugb-38-516"
-    }
-  },
-  "/docusaurus-tutorial/__docusaurus/debug/content-490": {
-    "__comp": "__comp---theme-debug-contentba-8-ce7",
-    "__context": {
-      "plugin": "plugin---docusaurus-tutorial-docusaurus-debugb-38-516"
-    },
-    "__props": "__props---docusaurus-tutorial-docusaurus-debug-content-0-a-9-ba9"
-  },
-  "/docusaurus-tutorial/__docusaurus/debug/globalData-6c6": {
-    "__comp": "__comp---theme-debug-global-dataede-0fa",
-    "__context": {
-      "plugin": "plugin---docusaurus-tutorial-docusaurus-debugb-38-516"
-    }
-  },
-  "/docusaurus-tutorial/__docusaurus/debug/metadata-9e9": {
-    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
-    "__context": {
-      "plugin": "plugin---docusaurus-tutorial-docusaurus-debugb-38-516"
-    }
-  },
-  "/docusaurus-tutorial/__docusaurus/debug/registry-41a": {
-    "__comp": "__comp---theme-debug-registry-679-501",
-    "__context": {
-      "plugin": "plugin---docusaurus-tutorial-docusaurus-debugb-38-516"
-    }
-  },
-  "/docusaurus-tutorial/__docusaurus/debug/routes-391": {
-    "__comp": "__comp---theme-debug-routes-946-699",
-    "__context": {
-      "plugin": "plugin---docusaurus-tutorial-docusaurus-debugb-38-516"
-    }
-  },
   "/docusaurus-tutorial/blog-cb3": {
-    "__comp": "__comp---theme-blog-list-pagea-6-a-7ba",
+    "__comp": "a6aa9e1f",
     "__context": {
-      "plugin": "plugin---docusaurus-tutorial-blog-369-9ed"
+      "plugin": "36994c47"
     },
-    "sidebar": "sidebar---docusaurus-tutorial-blog-814-0c7",
+    "sidebar": "814f3328",
     "items": [
       {
-        "content": "content---docusaurus-tutorial-blog-766-fef"
+        "content": "7661071f"
       },
       {
-        "content": "content---docusaurus-tutorial-blogf-4-f-fce"
+        "content": "f4f34a3a"
       },
       {
-        "content": "content---docusaurus-tutorial-blog-871-764"
+        "content": "8717b14a"
       },
       {
-        "content": "content---docusaurus-tutorial-blog-925-c15"
+        "content": "925b3f96"
       }
     ],
-    "__props": "__props---docusaurus-tutorial-blogf-2-f-cc9"
+    "__props": "f2f5fbd2"
   },
   "/docusaurus-tutorial/blog/archive-8c4": {
-    "__comp": "__comp---theme-blog-archive-page-9-e-4-1d8",
+    "__comp": "9e4087bc",
     "__context": {
-      "plugin": "plugin---docusaurus-tutorial-blog-369-9ed"
+      "plugin": "36994c47"
     },
-    "__props": "__props---docusaurus-tutorial-blog-archive-127-bbe"
+    "__props": "1274dc48"
   },
   "/docusaurus-tutorial/blog/authors-21b": {
-    "__comp": "__comp---theme-blog-pages-blog-authors-list-page-621-70c",
+    "__comp": "621db11d",
     "__context": {
       "data": {
-        "blogMetadata": "blogMetadata---docusaurus-tutorial-blog-authorsace-a17"
+        "blogMetadata": "acecf23e"
       },
-      "plugin": "plugin---docusaurus-tutorial-blog-369-9ed"
+      "plugin": "36994c47"
     },
-    "sidebar": "sidebar---docusaurus-tutorial-blog-814-0c7",
-    "__props": "__props---docusaurus-tutorial-blog-authorsd-2-b-292"
+    "sidebar": "814f3328",
+    "__props": "d2b9f1c6"
   },
   "/docusaurus-tutorial/blog/authors/all-sebastien-lorber-articles-a4a": {
-    "__comp": "__comp---theme-blog-pages-blog-authors-posts-page-33-f-bd5",
+    "__comp": "33fc5bb8",
     "__context": {
       "data": {
-        "blogMetadata": "blogMetadata---docusaurus-tutorial-blog-authorsace-a17"
+        "blogMetadata": "acecf23e"
       },
-      "plugin": "plugin---docusaurus-tutorial-blog-369-9ed"
+      "plugin": "36994c47"
     },
     "items": [
       {
-        "content": "content---docusaurus-tutorial-blog-766-fef"
+        "content": "7661071f"
       },
       {
-        "content": "content---docusaurus-tutorial-blogf-4-f-fce"
+        "content": "f4f34a3a"
       },
       {
-        "content": "content---docusaurus-tutorial-blog-925-c15"
+        "content": "925b3f96"
       }
     ],
-    "sidebar": "sidebar---docusaurus-tutorial-blog-814-0c7",
-    "__props": "__props---docusaurus-tutorial-blog-authors-all-sebastien-lorber-articles-461-986"
+    "sidebar": "814f3328",
+    "__props": "461df7ac"
   },
   "/docusaurus-tutorial/blog/authors/yangshun-06b": {
-    "__comp": "__comp---theme-blog-pages-blog-authors-posts-page-33-f-bd5",
+    "__comp": "33fc5bb8",
     "__context": {
       "data": {
-        "blogMetadata": "blogMetadata---docusaurus-tutorial-blog-authorsace-a17"
+        "blogMetadata": "acecf23e"
       },
-      "plugin": "plugin---docusaurus-tutorial-blog-369-9ed"
+      "plugin": "36994c47"
     },
     "items": [
       {
-        "content": "content---docusaurus-tutorial-blog-766-fef"
+        "content": "7661071f"
       },
       {
-        "content": "content---docusaurus-tutorial-blog-871-764"
+        "content": "8717b14a"
       },
       {
-        "content": "content---docusaurus-tutorial-blog-925-c15"
+        "content": "925b3f96"
       }
     ],
-    "sidebar": "sidebar---docusaurus-tutorial-blog-814-0c7",
-    "__props": "__props---docusaurus-tutorial-blog-authors-yangshunabc-010"
+    "sidebar": "814f3328",
+    "__props": "abc5cf69"
   },
   "/docusaurus-tutorial/blog/first-blog-post-7db": {
-    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__comp": "ccc49370",
     "__context": {
       "data": {
-        "blogMetadata": "blogMetadata---docusaurus-tutorial-blog-authorsace-a17"
+        "blogMetadata": "acecf23e"
       },
-      "plugin": "plugin---docusaurus-tutorial-blog-369-9ed"
+      "plugin": "36994c47"
     },
-    "sidebar": "sidebar---docusaurus-tutorial-blog-814-0c7",
-    "content": "content---docusaurus-tutorial-blog-first-blog-poste-27-22c"
+    "sidebar": "814f3328",
+    "content": "e273c56f"
   },
   "/docusaurus-tutorial/blog/long-blog-post-f35": {
-    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__comp": "ccc49370",
     "__context": {
       "data": {
-        "blogMetadata": "blogMetadata---docusaurus-tutorial-blog-authorsace-a17"
+        "blogMetadata": "acecf23e"
       },
-      "plugin": "plugin---docusaurus-tutorial-blog-369-9ed"
+      "plugin": "36994c47"
     },
-    "sidebar": "sidebar---docusaurus-tutorial-blog-814-0c7",
-    "content": "content---docusaurus-tutorial-blog-long-blog-post-736-642"
+    "sidebar": "814f3328",
+    "content": "73664a40"
   },
   "/docusaurus-tutorial/blog/mdx-blog-post-635": {
-    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__comp": "ccc49370",
     "__context": {
       "data": {
-        "blogMetadata": "blogMetadata---docusaurus-tutorial-blog-authorsace-a17"
+        "blogMetadata": "acecf23e"
       },
-      "plugin": "plugin---docusaurus-tutorial-blog-369-9ed"
+      "plugin": "36994c47"
     },
-    "sidebar": "sidebar---docusaurus-tutorial-blog-814-0c7",
-    "content": "content---docusaurus-tutorial-blog-mdx-blog-post-593-17d"
+    "sidebar": "814f3328",
+    "content": "59362658"
   },
   "/docusaurus-tutorial/blog/tags-5db": {
-    "__comp": "__comp---theme-blog-tags-list-page-01-a-d0b",
+    "__comp": "01a85c17",
     "__context": {
-      "plugin": "plugin---docusaurus-tutorial-blog-369-9ed"
+      "plugin": "36994c47"
     },
-    "sidebar": "sidebar---docusaurus-tutorial-blog-814-0c7",
-    "__props": "__props---docusaurus-tutorial-blog-tagsf-8-f-0f1"
+    "sidebar": "814f3328",
+    "__props": "f8fb1bd3"
   },
   "/docusaurus-tutorial/blog/tags/docusaurus-956": {
-    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__comp": "6875c492",
     "__context": {
-      "plugin": "plugin---docusaurus-tutorial-blog-369-9ed"
+      "plugin": "36994c47"
     },
-    "sidebar": "sidebar---docusaurus-tutorial-blog-814-0c7",
+    "sidebar": "814f3328",
     "items": [
       {
-        "content": "content---docusaurus-tutorial-blog-766-fef"
+        "content": "7661071f"
       },
       {
-        "content": "content---docusaurus-tutorial-blogf-4-f-fce"
+        "content": "f4f34a3a"
       },
       {
-        "content": "content---docusaurus-tutorial-blog-871-764"
+        "content": "8717b14a"
       },
       {
-        "content": "content---docusaurus-tutorial-blog-925-c15"
+        "content": "925b3f96"
       }
     ],
-    "__props": "__props---docusaurus-tutorial-blog-tags-docusaurus-90-d-f46"
+    "__props": "90df2052"
   },
   "/docusaurus-tutorial/blog/tags/facebook-4c3": {
-    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__comp": "6875c492",
     "__context": {
-      "plugin": "plugin---docusaurus-tutorial-blog-369-9ed"
+      "plugin": "36994c47"
     },
-    "sidebar": "sidebar---docusaurus-tutorial-blog-814-0c7",
+    "sidebar": "814f3328",
     "items": [
       {
-        "content": "content---docusaurus-tutorial-blog-766-fef"
+        "content": "7661071f"
       }
     ],
-    "__props": "__props---docusaurus-tutorial-blog-tags-facebook-950-41e"
+    "__props": "9502c101"
   },
   "/docusaurus-tutorial/blog/tags/hello-ff7": {
-    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__comp": "6875c492",
     "__context": {
-      "plugin": "plugin---docusaurus-tutorial-blog-369-9ed"
+      "plugin": "36994c47"
     },
-    "sidebar": "sidebar---docusaurus-tutorial-blog-814-0c7",
+    "sidebar": "814f3328",
     "items": [
       {
-        "content": "content---docusaurus-tutorial-blog-766-fef"
+        "content": "7661071f"
       },
       {
-        "content": "content---docusaurus-tutorial-blog-871-764"
+        "content": "8717b14a"
       }
     ],
-    "__props": "__props---docusaurus-tutorial-blog-tags-hello-722-48e"
+    "__props": "722c4cf5"
   },
   "/docusaurus-tutorial/blog/tags/hola-551": {
-    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__comp": "6875c492",
     "__context": {
-      "plugin": "plugin---docusaurus-tutorial-blog-369-9ed"
+      "plugin": "36994c47"
     },
-    "sidebar": "sidebar---docusaurus-tutorial-blog-814-0c7",
+    "sidebar": "814f3328",
     "items": [
       {
-        "content": "content---docusaurus-tutorial-blog-925-c15"
+        "content": "925b3f96"
       }
     ],
-    "__props": "__props---docusaurus-tutorial-blog-tags-holac-08-2a3"
+    "__props": "c080c8b2"
   },
   "/docusaurus-tutorial/blog/welcome-f7e": {
-    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__comp": "ccc49370",
     "__context": {
       "data": {
-        "blogMetadata": "blogMetadata---docusaurus-tutorial-blog-authorsace-a17"
+        "blogMetadata": "acecf23e"
       },
-      "plugin": "plugin---docusaurus-tutorial-blog-369-9ed"
+      "plugin": "36994c47"
     },
-    "sidebar": "sidebar---docusaurus-tutorial-blog-814-0c7",
-    "content": "content---docusaurus-tutorial-blog-welcomed-9-f-ae4"
+    "sidebar": "814f3328",
+    "content": "d9f32620"
   },
   "/docusaurus-tutorial/markdown-page-7e5": {
-    "__comp": "__comp---theme-mdx-page-1-f-3-b90",
+    "__comp": "1f391b9e",
     "__context": {
-      "plugin": "plugin---docusaurus-tutorial-markdown-pagea-74-42b"
+      "plugin": "a7456010"
     },
-    "content": "content---docusaurus-tutorial-markdown-page-393-cde"
+    "content": "393be207"
   },
   "/docusaurus-tutorial/docs-6a6": {
-    "__comp": "__comp---theme-docs-root-5-e-9-0b6",
+    "__comp": "5e95c892",
     "__context": {
-      "plugin": "plugin---docusaurus-tutorial-docsaba-037"
+      "plugin": "aba21aa0"
     }
   },
   "/docusaurus-tutorial/docs-7e3": {
-    "__comp": "__comp---theme-doc-version-roota-7-b-5de",
-    "__props": "__props---docusaurus-tutorial-docs-533-e45"
+    "__comp": "a7bd4aaa",
+    "__props": "53318f3d"
   },
   "/docusaurus-tutorial/docs-a80": {
-    "__comp": "__comp---theme-doc-roota-94-67a"
+    "__comp": "a94703ab"
   },
   "/docusaurus-tutorial/docs/Bronze-405": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docusaurus-tutorial-docs-bronzee-46-104"
+    "__comp": "17896441",
+    "content": "e4656bc2"
   },
   "/docusaurus-tutorial/docs/data-viz-course-material-165": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docusaurus-tutorial-docs-data-viz-course-material-05-a-714"
+    "__comp": "17896441",
+    "content": "05ad75de"
   },
   "/docusaurus-tutorial/docs/Databricks-745": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docusaurus-tutorial-docs-databricks-87-d-669"
+    "__comp": "17896441",
+    "content": "87d4ae2e"
   },
   "/docusaurus-tutorial/docs/databricks-advanced-data-engineering-843": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docusaurus-tutorial-docs-databricks-advanced-data-engineering-187-86c"
+    "__comp": "17896441",
+    "content": "1877fad4"
   },
   "/docusaurus-tutorial/docs/databricks-basic-data-engineering-e31": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docusaurus-tutorial-docs-databricks-basic-data-engineering-76-c-90a"
+    "__comp": "17896441",
+    "content": "76c6dc63"
   },
   "/docusaurus-tutorial/docs/dimensional-modeling-slides-c4c": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docusaurus-tutorial-docs-dimensional-modeling-slides-4-e-1-bb6"
+    "__comp": "17896441",
+    "content": "4e1294bf"
   },
   "/docusaurus-tutorial/docs/Gold-b15": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docusaurus-tutorial-docs-gold-6-d-8-815"
+    "__comp": "17896441",
+    "content": "6d89d9ed"
   },
   "/docusaurus-tutorial/docs/intro-985": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docusaurus-tutorial-docs-intro-0-e-3-d1a"
+    "__comp": "17896441",
+    "content": "0e384e19"
   },
   "/docusaurus-tutorial/docs/pyspark-program-samples-0c0": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docusaurus-tutorial-docs-pyspark-program-samples-087-43c"
+    "__comp": "17896441",
+    "content": "087388a6"
   },
   "/docusaurus-tutorial/docs/relational-modeling-slides-5f6": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docusaurus-tutorial-docs-relational-modeling-slidesca-1-4a4"
+    "__comp": "17896441",
+    "content": "ca1f2793"
   },
   "/docusaurus-tutorial/docs/Silver-fad": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docusaurus-tutorial-docs-silverce-5-9bc"
+    "__comp": "17896441",
+    "content": "ce536f54"
   },
   "/docusaurus-tutorial/-aff": {
-    "__comp": "__comp---site-src-pages-index-jsc-4-f-f99",
+    "__comp": "c4f5d8e4",
     "__context": {
-      "plugin": "plugin---docusaurus-tutorial-markdown-pagea-74-42b"
+      "plugin": "a7456010"
     },
-    "config": "config---docusaurus-tutorial-5-e-9-b87"
+    "config": "5e9f5e1a"
   }
 }
